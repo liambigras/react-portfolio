@@ -1,24 +1,24 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "Reactfolio by Liam Bigras",
+		name: "Liam B.",
+		email: "bigrasliam@gmail.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
 		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
+		github: "https://github.com/liambigras",
+		linkedin: "https://www.linkedin.com/in/liam-bigras-4635661b8/",
 		instagram: "https://instagram.com/",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "FullStack Web Developer",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			`I have hands-on experience in planning, building & maintaining robust & scalable web applications. I genuinely enjoy untangling complex problems and thrive on the excitement of learning new skills. I'm not just a developer; I'm passionate about what I do. Always on the lookout for fresh challenges, I see them as opportunities to grow and improve. Let's build something awesome together!`,
 	},
 
 	about: {
@@ -38,7 +38,7 @@ const INFO = {
 			title: "Project 1",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
