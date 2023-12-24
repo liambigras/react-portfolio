@@ -2,7 +2,7 @@
 	"name": "reactfolio",
 	"version": "1.1.0",
 	"description": "Personal portfolio template built using Reactjs",
-	"homepage": "https://liambigras.github.io/portfolio",
+	"homepage": "https://liambigras.github.io/react-portfolio",
 	"author": {
 		"name": "Liam Bigras",
 		"email": "bigrasliam@gmail.com",
