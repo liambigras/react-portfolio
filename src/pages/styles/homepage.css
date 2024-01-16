@@ -94,6 +94,20 @@
 	padding-top: 30px;
 }
 
+.myProjects {
+	width: 100%;
+	max-width:800px;
+}
+
+.projectCard {
+
+	transition: transform .2s ease-out;
+	display: inline-block;
+  }
+  .projectCard:hover {
+	transform: translate(0, -10px);
+  }
+
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
@@ -148,9 +162,5 @@
 		margin-left: -25px;
 		margin-right: -25px;
 	}
-	.homepage-center {
-		display:"flex";
-		justify-content:"center"; 
-		margin-top:"2rm";
-	}
+	
 }

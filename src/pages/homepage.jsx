@@ -24,6 +24,56 @@ import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 
+const projects = [
+	{
+		title: "Bonsai Management",
+		description: "SAAS platform for condo management.",
+		url: "https://app.gestionbonsai.com",
+		img: INFO.main.bonsai,
+		time: "2022-2024",
+		tech: [
+			{name: "react", icon: INFO.technology.react},
+			{name: "MUI", icon: INFO.technology.materialui},
+			{name: "redux", icon: INFO.technology.redux}
+		]
+	},
+	{
+		title: "Co-Founded Pro-Plex",
+		description: "Quebec Lease signing platform",
+		url: "https://app.pro-plex.com",
+		img: INFO.main.proplex,
+		time: "2023-Present",
+		tech: [
+			{name:"react", icon: INFO.technology.react},
+			{name: "MUI", icon: INFO.technology.materialui},
+			{name: "redux", icon: INFO.technology.redux}
+		]
+	},
+	{
+		title: "BitRivals",
+		description: "Platform to earn $Rival rewards. Win rewards & raffles by playing games.",
+		url: "https://token.bitrivals.app/",
+		img: INFO.main.bitrival,
+		time: "2021-2022",
+		tech: [
+			{name: "react", icon: INFO.technology.react},
+			{name: "tailwindcss", icon: INFO.technology.tailwindcss},
+			{name: "axios", icon: INFO.technology.axios}
+		]
+	},
+	{
+		title: "Embr",
+		description: "Token empowering payment gateways",
+		url: "https://www.embr.org/",
+		img: INFO.main.embr,
+		time: "2021-2022",
+		tech: [
+			{name:"Nextjs", icon: INFO.technology.nextjs},
+			{name:"tailwindcss", icon: INFO.technology.tailwindcss},
+		]
+	}
+]
+
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(160);
@@ -57,13 +107,13 @@ const Homepage = () => {
 				/>
 			</Helmet>
 			
-			<div className="page-content" style={{height:"100vh", display:"flex", alignContent:"center", alignItems:"center"}}>
+			<div className="page-content" style={{minHeight:"100vh", display:"flex", alignContent:"center", alignItems:"center"}}>
 				
 				<div className="content-wrapper">
 				
 
 					<div className="homepage-container">
-					<div style={{display:"flex", justifyContent:"center", marginTop:"2rm", flexDirection:"column", alignItems:"center"}}>
+					<div style={{display:"flex", justifyContent:"center", marginTop:"10em", flexDirection:"column", alignItems:"center"}}>
 					<Logo width={90} />
 					<h1 style={{color:"white"}}>Hi! I'm Liam Bigras 👋</h1>
 					<h2 style={{maxWidth:"500px", textAlign:"center", color:"white", fontWeight:"400", lineHeight:"2em", fontSize:"1.7em"}}>I help architect & develop SAAS & Mobile applications for the web</h2>
@@ -104,10 +154,48 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+							<a
+								href={INFO.socials.instagram}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faInstagram}
+									className="homepage-social-icon"
+								/>
+							</a>
 						</div>
 						<div style={{backgroundColor:"#919191", width:"100%", margin:"2em 0 2px 0", height:"0.009em"}}/>
 						<div className="myProjects">
-							
+							<h1 style={{color:"white", marginTop:"3em", marginBottom:"2em", textAlign:"center"}}>My Projects</h1>
+							<div style={{
+								display:"flex",
+								flexWrap:"wrap",
+								gap:"1em",
+								justifyContent:"center"
+							}}>
+							{projects.map((project, index) => <div onClick={()=> window.open(project.url)} id={index} className={"projectCard"} style={{backgroundColor:"#262c28", borderRadius:30,  width:"45%", cursor:"pointer" }}>
+									<img src={project.img ?? INFO.main.logo} width={"100%"} height={"200px"} style={{objectFit:"cover", objectPosition:"top", borderTopLeftRadius:30, borderTopRightRadius:30}}/>
+									<div style={{padding:"20px", marginTop:"1em", marginBottom:"2em"}}>
+									<h2 style={{color:"white", lineHeight:0}}>{project.title}</h2>
+									<h4 style={{color:"white"}}>{project.description}</h4>
+									<p style={{color:"#ffffff"}}>{project.time}</p>
+									<div style={{display:"flex", alignContent:"flex-end", }}>
+									<div style={{display:"flex", flexDirection:"row", gap:5, alignContent:"flex-end"}}>
+									{
+											project.tech.map((tech, index) => <img key={`${index}img`} width={25} height={25} style={{objectFit:"fill"}} src={tech.icon}/>)
+									}
+									</div>
+									</div>
+									
+									
+									</div>
+									
+							</div>)}
+							</div>
+							<div style={{display:"flex", justifyContent:"center", marginTop:"5em", marginBottom:"1em"}}>
+								<p style={{color:"gray", fontSize:"15px"}}>@ {new Date().getFullYear()}</p>
+							</div>
 						</div>
 						{/*<div className="homepage-projects">
 							<AllProjects />

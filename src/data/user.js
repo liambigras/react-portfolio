@@ -4,13 +4,26 @@ const INFO = {
 		name: "Liam B.",
 		email: "bigrasliam@gmail.com",
 		logo: "../me.png",
+		embr: "../embr.jpg",
+		bonsai: "../bonsai.jpg",
+		proplex: "../pro-plex.jpg",
+		bitrival: "../bitrival.jpg",
+		
+	},
+	technology: {
+		react: "../react-2.svg",
+		tailwindcss: "../tailwindcss.svg",
+		materialui: "../material-ui-1.svg",
+		nextjs: "../next-js.svg",
+		redux: "../redux.svg",
+		axios: "../axios.svg",
 	},
 
 	socials: {
 		twitter: "https://twitter.com/",
 		github: "https://github.com/liambigras",
 		linkedin: "https://www.linkedin.com/in/liam-bigras-4635661b8/",
-		instagram: "https://instagram.com/",
+		instagram: "https://www.instagram.com/liambigras/",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 	},
