@@ -24,6 +24,8 @@ import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 
+
+
 const projects = [
 	{
 		title: "Bonsai Management",
@@ -172,9 +174,10 @@ const Homepage = () => {
 								display:"flex",
 								flexWrap:"wrap",
 								gap:"1em",
+								
 								justifyContent:"center"
 							}}>
-							{projects.map((project, index) => <div onClick={()=> window.open(project.url)} id={index} className={"projectCard"} style={{backgroundColor:"#262c28", borderRadius:30,  width:"45%", cursor:"pointer" }}>
+							{projects.map((project, index) => <div onClick={()=> window.open(project.url)} id={index} className={"projectCard"} style={{ backgroundColor:"#262c28", borderRadius:30,  cursor:"pointer" }}>
 									<img src={project.img ?? INFO.main.logo} width={"100%"} height={"200px"} style={{objectFit:"cover", objectPosition:"top", borderTopLeftRadius:30, borderTopRightRadius:30}}/>
 									<div style={{padding:"20px", marginTop:"1em", marginBottom:"2em"}}>
 									<h2 style={{color:"white", lineHeight:0}}>{project.title}</h2>

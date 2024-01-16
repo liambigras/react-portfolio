@@ -100,13 +100,21 @@
 }
 
 .projectCard {
-
+	width: 45%;
 	transition: transform .2s ease-out;
 	display: inline-block;
   }
   .projectCard:hover {
 	transform: translate(0, -10px);
   }
+
+@media (max-width:750px){
+	.projectCard {
+		width: -webkit-fill-available;
+		width: -moz-fill-available;
+	}
+	
+}
 
 @media (max-width: 1024px) {
 	.homepage-first-area {
@@ -162,5 +170,6 @@
 		margin-left: -25px;
 		margin-right: -25px;
 	}
+
 	
 }
