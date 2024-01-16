@@ -9,6 +9,7 @@
 
 .homepage-container {
 	padding-top: 25px;
+	height: "100vh";
 }
 
 .homepage-first-area {
@@ -53,14 +54,14 @@
 
 .homepage-socials {
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	padding-top: 30px;
 }
 
 .homepage-social-icon {
 	padding-right: 20px;
-	font-size: 25px;
+	font-size: 35px;
 	transition: color 0.2s ease-in-out;
 	color: var(--secondary-color);
 }
@@ -146,5 +147,10 @@
 		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;
+	}
+	.homepage-center {
+		display:"flex";
+		justify-content:"center"; 
+		margin-top:"2rm";
 	}
 }

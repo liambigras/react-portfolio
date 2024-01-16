@@ -1,9 +1,9 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by Liam Bigras",
+		title: "Liam Bigras",
 		name: "Liam B.",
 		email: "bigrasliam@gmail.com",
-		logo: "../logo.png",
+		logo: "../me.png",
 	},
 
 	socials: {
