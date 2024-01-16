@@ -4,10 +4,10 @@ const INFO = {
 		name: "Liam B.",
 		email: "bigrasliam@gmail.com",
 		logo: "../me.png",
-		embr: "../embr.jpg",
-		bonsai: "../bonsai.jpg",
-		proplex: "../pro-plex.jpg",
-		bitrival: "../bitrival.jpg",
+		embr: "./embr.JPG",
+		bonsai: "./bonsai.JPG",
+		proplex: "./pro-plex.JPG",
+		bitrival: "./bitrival.JPG",
 		
 	},
 	technology: {
