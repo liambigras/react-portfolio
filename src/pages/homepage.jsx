@@ -40,7 +40,7 @@ const projects = [
 		]
 	},
 	{
-		title: "Co-Founded Pro-Plex",
+		title: "Pro-Plex",
 		description: "Quebec Lease signing platform",
 		url: "https://app.pro-plex.com",
 		img: INFO.main.proplex,
@@ -169,7 +169,7 @@ const Homepage = () => {
 						</div>
 						<div style={{backgroundColor:"#919191", width:"100%", margin:"2em 0 2px 0", height:"0.009em"}}/>
 						<div className="myProjects">
-							<h1 style={{color:"white", marginTop:"3em", marginBottom:"2em", textAlign:"center"}}>My Projects</h1>
+							<h1 style={{color:"white", marginTop:"3em", marginBottom:"2em", textAlign:"center"}}>My Contributions</h1>
 							<div style={{
 								display:"flex",
 								flexWrap:"wrap",
