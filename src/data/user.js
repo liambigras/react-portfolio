@@ -3,7 +3,7 @@ const INFO = {
 		title: "Liam Bigras",
 		name: "Liam B.",
 		email: "bigrasliam@gmail.com",
-		logo: "../me.png",
+		logo: "../me2.png",
 		embr: "./embr.JPG",
 		bonsai: "./bonsai.JPG",
 		proplex: "./pro-plex.JPG",
